@@ -10,4 +10,11 @@ public class Cuffie extends Prodotto {
         this.isWirless = isWirless;
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "Sono state inserite le cuffie %s, della marca %s, che hanno prezzo %f, con iva inclusa al %d per cento, di colore %s con possibilita di wirless = %b",
+                nome, marca, prezzo, iva, colore, isWirless);
+    }
+
 }

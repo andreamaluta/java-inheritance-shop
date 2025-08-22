@@ -10,4 +10,11 @@ public class Smartphone extends Prodotto {
         this.memoria = memoria;
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "E' stato inserito uno smartphone %s, della marca %s, che ha prezzo %f, con iva inclusa al %d per cento, con codice imei %d e con quantità di memoria pari a %d",
+                nome, marca, prezzo, iva, imeiCode, memoria);
+    }
+
 }

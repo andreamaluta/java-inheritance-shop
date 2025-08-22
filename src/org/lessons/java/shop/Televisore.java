@@ -26,4 +26,11 @@ public class Televisore extends Prodotto {
         this.isSmart = isSmart;
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "E' stato inserito un televisore %s, della marca %s, che ha prezzo %f, con iva inclusa al %d per cento, di dimensione %d con possibilita di internet = %b",
+                nome, marca, prezzo, iva, dimensione, isSmart);
+    }
+
 }
